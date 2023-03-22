@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <%- include ('../partials/head.ejs') %>
+    <title>User Registration</title>
+  </head>
+  <body>
+    
+    <header id="register-section">
+        <div class="dark-overlay">
+          <nav>
+            <!-- <img src="uploads/logo.png" alt=""> -->
+            <div class="text-center"> 
+                <a class="btn btn-warning text-white" href="/users/signin">Log in</a>
+            </div>
+            </nav>  
+          <div class="home-inner container">
+            <div class="row">
+              <div class="col-lg-8 d-none d-lg-block">
+                <h1 class="mt-5">
+                  <strong>Entrepreneurs of all experience levels welcome</strong> 
+                </h1>
+                <div class="d-flex">
+                    <p>Whether you want to host a few cars to earn extra income to pay for life’s expenses, or build a small shop with a portfolio of cars, start with one car and scale how you want.</p>
+                </div>  
+              </div>
+    
+              <div class="col-lg-4">
+                <div class="card bg-white text-center card-form">
+                  <div class="card-body text-dark">
+                    <h3>Sign Up Today</h3>
+                    <p>Please fill out this form to register</p>
+                    <form action="/users/register" method="POST">
+                      <div class="form-group mb-2">
+                        <input type="text" class="form-control form-control-lg border border-dark" name="username" placeholder="Username">
+                      </div>
+                      <div class="form-group mb-2">
+                        <input type="password" class="form-control form-control-lg border border-dark" name="password" placeholder="Password">
+                      </div>
+                      <input type="submit" value="Submit" class="btn btn-dark text-light btn-block">
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+  </body>
+</html>
